@@ -1,1 +1,458 @@
-hello
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Bounce House Rentals | Home</title>
+    <meta name="description"
+        content="Rent premium bounce houses, water slides, and inflatables for your next event. Check real-time availability and book online.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand">
+                <i class="bi bi-balloon-fill text-primary"></i> Bounce<span class="text-main">Elite</span>
+            </a>
+
+            <nav class="d-none d-lg-flex align-items-center">
+                <ul class="d-flex align-items-center m-0 p-0" style="list-style:none; gap:20px;">
+                    <li><a href="index.html" class="nav-link active">Home 1</a></li>
+                    <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="rtl-toggle btn btn-sm btn-outline-secondary" aria-label="Toggle RTL">RTL</button>
+                <a href="login.html" class="nav-link fw-bold">Login</a>
+                <a href="dashboard.html" class="btn-premium btn-sm">Dashboard</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="btn btn-outline-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <i class="bi bi-list fs-3"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end bg-main" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title text-primary"><i class="bi bi-balloon-fill"></i> BounceElite</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-3 mb-4">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home 1</a></li>
+                <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="d-flex flex-column gap-3">
+                <a href="login.html" class="btn btn-outline-premium w-100">Login</a>
+                <a href="dashboard.html" class="btn-premium w-100 text-center">Dashboard</a>
+            </div>
+            <div class="header-actions mt-4">
+                <button class="theme-toggle btn btn-outline-secondary w-100"><i class="bi bi-moon-fill"></i> Toggle
+                    Theme</button>
+                <button class="rtl-toggle btn btn-outline-secondary w-100">Toggle RTL</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. Premium Hero (Parallax + Floating Elements) -->
+    <section class="hero-wrapper"
+        style="background-image: url('https://picsum.photos/seed/home1/1920/1080'); background-attachment: fixed;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-left">
+                    <span class="badge bg-primary px-3 py-2 rounded-pill mb-3">Premium Inflatables</span>
+                    <h1 class="display-3 fw-bold text-white mb-4">Elevate Your Next Event with <span
+                            class="text-primary">BounceElite</span></h1>
+                    <p class="lead text-white-50 mb-5">Discover luxury bounce houses, massive water slides, and
+                        challenging obstacle courses. Real-time availability and instant booking.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a href="booking.html" class="btn-premium">Book Now <i class="bi bi-arrow-right ms-2"></i></a>
+                        <a href="services.html" class="btn-outline-premium text-white border-white">View Inventory</a>
+                    </div>
+                </div>
+                <!-- Floating Elements Simulation -->
+                <div class="col-lg-6 d-none d-lg-block fade-right position-relative" style="height: 500px;">
+                    <div class="glass-card position-absolute"
+                        style="top: 10%; right: 10%; width: 250px; animation: float 6s ease-in-out infinite;">
+                        <img src="https://picsum.photos/seed/float1/300/200" class="img-fluid rounded mb-2"
+                            alt="Castle">
+                        <h6 class="mb-1">Princess Castle</h6>
+                        <p class="small text-success mb-0"><i class="bi bi-check-circle-fill"></i> Available Today</p>
+                    </div>
+                    <div class="glass-card position-absolute"
+                        style="bottom: 10%; left: 10%; width: 250px; animation: float 8s ease-in-out infinite reverse;">
+                        <img src="https://picsum.photos/seed/float2/300/200" class="img-fluid rounded mb-2" alt="Slide">
+                        <h6 class="mb-1">Mega Wave Slide</h6>
+                        <p class="small text-danger mb-0"><i class="bi bi-x-circle-fill"></i> Booked for Weekend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Inflatable Categories (Staggered Fade-Up) -->
+    <section class="bg-main py-5">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Explore <span>Categories</span></h2>
+                <p>Find the perfect inflatable for your specific event type.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 fade-up stagger-1">
+                    <a href="services.html" class="text-decoration-none">
+                        <div class="glass-card p-0 overflow-hidden text-center h-100">
+                            <img src="https://images.pexels.com/photos/9308434/pexels-photo-9308434.jpeg"
+                                class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Bounce Houses">
+                            <div class="p-4">
+                                <h4 class="text-main mb-0">Bounce Houses</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 fade-up stagger-2">
+                    <a href="services.html" class="text-decoration-none">
+                        <div class="glass-card p-0 overflow-hidden text-center h-100">
+                            <img src="https://images.pexels.com/photos/31166929/pexels-photo-31166929.jpeg"
+                                class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Water Slides">
+                            <div class="p-4">
+                                <h4 class="text-main mb-0">Water Slides</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 fade-up stagger-3">
+                    <a href="services.html" class="text-decoration-none">
+                        <div class="glass-card p-0 overflow-hidden text-center h-100">
+                            <img src="https://images.pexels.com/photos/8700871/pexels-photo-8700871.jpeg"
+                                class="img-fluid w-100" style="height: 200px; object-fit: cover;"
+                                alt="Obstacle Courses">
+                            <div class="p-4">
+                                <h4 class="text-main mb-0">Obstacle Courses</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Popular Rentals (Scale-In) -->
+    <section class="bg-secondary py-5">
+        <div class="container">
+            <div class="section-title zoom-in">
+                <h2>Popular <span>Rentals</span></h2>
+                <p>Our most frequently booked premium inflatables.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Rental Card 1 -->
+                <div class="col-lg-4 col-md-6 zoom-in stagger-1">
+                    <div class="card bg-card border-0 shadow-sm h-100 rounded-4 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/35532063/pexels-photo-35532063.jpeg"
+                            class="card-img-top" alt="Rental 1">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">Tropical Combo</h5>
+                                <span class="badge bg-success">Available</span>
+                            </div>
+                            <p class="text-primary fw-bold fs-5 mb-3">$250 <span class="text-muted fs-6 fw-normal">/
+                                    day</span></p>
+                            <ul class="list-unstyled text-muted small mb-4">
+                                <li><i class="bi bi-rulers"></i> 15' x 15' Footprint</li>
+                                <li><i class="bi bi-people"></i> Max 8 Kids</li>
+                                <li><i class="bi bi-droplet"></i> Wet/Dry Setup</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-outline-premium w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rental Card 2 -->
+                <div class="col-lg-4 col-md-6 zoom-in stagger-2">
+                    <div class="card bg-card border-0 shadow-sm h-100 rounded-4 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/10067450/pexels-photo-10067450.jpeg"
+                            class="card-img-top" alt="Rental 2">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">Extreme Rush Slide</h5>
+                                <span class="badge bg-warning text-dark">Limited</span>
+                            </div>
+                            <p class="text-primary fw-bold fs-5 mb-3">$350 <span class="text-muted fs-6 fw-normal">/
+                                    day</span></p>
+                            <ul class="list-unstyled text-muted small mb-4">
+                                <li><i class="bi bi-rulers"></i> 20' Tall Slide</li>
+                                <li><i class="bi bi-people"></i> Max 2 at a time</li>
+                                <li><i class="bi bi-droplet"></i> Water Attached</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-outline-premium w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rental Card 3 -->
+                <div class="col-lg-4 col-md-6 zoom-in stagger-3">
+                    <div class="card bg-card border-0 shadow-sm h-100 rounded-4 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/11106241/pexels-photo-11106241.jpeg"
+                            class="card-img-top" alt="Rental 3">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">Ninja Course</h5>
+                                <span class="badge bg-danger">Booked</span>
+                            </div>
+                            <p class="text-primary fw-bold fs-5 mb-3">$450 <span class="text-muted fs-6 fw-normal">/
+                                    day</span></p>
+                            <ul class="list-unstyled text-muted small mb-4">
+                                <li><i class="bi bi-rulers"></i> 40' Long Course</li>
+                                <li><i class="bi bi-people"></i> Team Building</li>
+                                <li><i class="bi bi-shield-check"></i> Safety Mats Included</li>
+                            </ul>
+                            <a href="service-details.html" class="btn btn-outline-premium w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. How Booking Works (Timeline Reveal) -->
+    <section class="bg-main py-5">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>How <span>Booking</span> Works</h2>
+                <p>A seamless, hassle-free process from selection to party time.</p>
+            </div>
+            <div class="row position-relative">
+                <div class="col-md-3 text-center fade-up stagger-1">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width:80px; height:80px; font-size:2rem;">1</div>
+                    <h5 class="fw-bold">Browse & Select</h5>
+                    <p class="small">Choose from our premium inventory based on your event needs.</p>
+                </div>
+                <div class="col-md-3 text-center fade-up stagger-2">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width:80px; height:80px; font-size:2rem;">2</div>
+                    <h5 class="fw-bold">Check Availability</h5>
+                    <p class="small">Use our real-time calendar to ensure your date is open.</p>
+                </div>
+                <div class="col-md-3 text-center fade-up stagger-3">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width:80px; height:80px; font-size:2rem;">3</div>
+                    <h5 class="fw-bold">Secure Booking</h5>
+                    <p class="small">Pay online instantly and receive automated confirmations.</p>
+                </div>
+                <div class="col-md-3 text-center fade-up stagger-4">
+                    <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width:80px; height:80px; font-size:2rem;">4</div>
+                    <h5 class="fw-bold">We Deliver & Setup</h5>
+                    <p class="small">Our team handles delivery, safe installation, and teardown.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Customer Reviews -->
+    <section class="bg-secondary py-5">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Customer <span>Reviews</span></h2>
+                <p>Don't just take our word for it.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 fade-up stagger-1">
+                    <div class="glass-card h-100">
+                        <div class="d-flex text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="fst-italic">"The water slide was the highlight of our summer party! The team was on
+                            time and very professional."</p>
+                        <div class="d-flex align-items-center gap-3 mt-auto pt-3">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle"
+                                style="width: 50px; height: 50px; object-fit: cover;" alt="User">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Sarah Jenkins</h6>
+                                <small class="text-muted">Birthday Party</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up stagger-2">
+                    <div class="glass-card h-100">
+                        <div class="d-flex text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-half"></i>
+                        </div>
+                        <p class="fst-italic">"Extremely clean inflatables and the online booking process was a breeze.
+                            Highly recommended!"</p>
+                        <div class="d-flex align-items-center gap-3 mt-auto pt-3">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle"
+                                style="width: 50px; height: 50px; object-fit: cover;" alt="User">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Mike Thompson</h6>
+                                <small class="text-muted">Corporate Event</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up stagger-3">
+                    <div class="glass-card h-100">
+                        <div class="d-flex text-warning mb-3">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="fst-italic">"The kids loved the obstacle course. Safety was clearly a priority for the
+                            setup crew."</p>
+                        <div class="d-flex align-items-center gap-3 mt-auto pt-3">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle"
+                                style="width: 50px; height: 50px; object-fit: cover;" alt="User">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Amanda Clark</h6>
+                                <small class="text-muted">School Carnival</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CTA (Glow Pulse) -->
+    <section class="py-5 bg-main text-center position-relative">
+        <div class="container">
+            <div class="glass-card p-5 mx-auto" style="max-width: 800px; animation: glowPulse 3s infinite alternate;">
+                <h2 class="display-5 fw-bold mb-3">Ready for an Unforgettable Event?</h2>
+                <p class="lead mb-4">Secure your favorite inflatables today. Our premium inventory books out weeks in
+                    advance.</p>
+                <a href="booking.html" class="btn-premium btn-lg">Check Availability Calendar</a>
+            </div>
+        </div>
+        <style>
+            @keyframes float {
+                0% {
+                    transform: translateY(0px);
+                }
+
+                50% {
+                    transform: translateY(-20px);
+                }
+
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+
+            @keyframes glowPulse {
+                0% {
+                    box-shadow: 0 0 15px rgba(255, 107, 53, 0.2);
+                }
+
+                100% {
+                    box-shadow: 0 0 40px rgba(255, 107, 53, 0.6);
+                }
+            }
+        </style>
+    </section>
+
+
+    <!-- Custom Request CTA -->
+    <section class="py-5 text-center bg-secondary">
+        <div class="container py-4 fade-up">
+            <h2 class="fw-bold mb-3">Have a Custom Request?</h2>
+            <p class="lead mb-4">Contact our team to build a tailored package for your massive event.</p>
+            <a href="contact.html" class="btn-outline-premium px-5">Contact Sales</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="navbar-brand fs-3 fw-bold mb-3 d-block text-decoration-none">
+                        <i class="bi bi-balloon-fill text-primary"></i> Bounce<span class="text-main">Elite</span>
+                    </a>
+                    <p class="mb-4">Delivering joy, safety, and unforgettable memories with our premium selection of
+                        bounce houses and event inflatables.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Inventory</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 footer-widget">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="dashboard.html">My Dashboard</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="blog.html">Party Tips</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-widget">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive discounts and new inventory updates.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-start-pill border-end-0"
+                            placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary rounded-end-pill px-4">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+                <p class="mb-0">&copy; 2026 BounceElite Rentals. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

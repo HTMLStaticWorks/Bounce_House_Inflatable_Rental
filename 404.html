@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found | BounceElite</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-main);
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .error-text {
+            font-size: 8rem;
+            font-weight: 900;
+            color: var(--primary);
+            text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+            line-height: 1;
+            margin-bottom: 0;
+            animation: bounce 2s infinite ease-in-out;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .floating-element {
+            position: absolute;
+            z-index: 0;
+            opacity: 0.1;
+            animation: float 10s infinite linear;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand">
+                <i class="bi bi-balloon-fill text-primary"></i> Bounce<span class="text-main">Elite</span>
+            </a>
+            
+            <nav class="d-none d-lg-flex align-items-center">
+                <ul class="d-flex align-items-center m-0 p-0" style="list-style:none; gap:20px;">
+                    <li><a href="index.html" class="nav-link active">Home 1</a></li>
+                    <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="rtl-toggle btn btn-sm btn-outline-secondary" aria-label="Toggle RTL">RTL</button>
+                <a href="login.html" class="nav-link fw-bold">Login</a>
+                <a href="dashboard.html" class="btn-premium btn-sm">Dashboard</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="btn btn-outline-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <i class="bi bi-list fs-3"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end bg-main" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title text-primary"><i class="bi bi-balloon-fill"></i> BounceElite</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-3 mb-4">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home 1</a></li>
+                <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="d-flex flex-column gap-3">
+                <a href="login.html" class="btn btn-outline-premium w-100">Login</a>
+                <a href="dashboard.html" class="btn-premium w-100 text-center">Dashboard</a>
+            </div>
+            <div class="header-actions mt-4">
+                <button class="theme-toggle btn btn-outline-secondary w-100"><i class="bi bi-moon-fill"></i> Toggle Theme</button>
+                <button class="rtl-toggle btn btn-outline-secondary w-100">Toggle RTL</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="error-wrapper">
+        <!-- Decorative Floating Elements -->
+        <i class="bi bi-balloon-fill floating-element text-primary" style="font-size: 15rem; top: 10%; left: 10%;"></i>
+        <i class="bi bi-balloon-heart-fill floating-element text-secondary" style="font-size: 10rem; bottom: 10%; right: 15%; animation-duration: 15s;"></i>
+        
+        <div class="position-relative z-2">
+            <h1 class="error-text">404</h1>
+            <h2 class="display-5 fw-bold mb-3">Oops! Deflated Page</h2>
+            <p class="lead text-muted mb-5 mx-auto" style="max-width: 500px;">Looks like the page you are looking for has completely lost its air. Let's get you back to the party.</p>
+            <a href="index.html" class="btn-premium px-5 py-3 fs-5"><i class="bi bi-house-door me-2"></i> Return Home</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

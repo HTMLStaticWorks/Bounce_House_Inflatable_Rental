@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | BounceElite</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- Header -->
+    <header class="header">
+        <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand">
+                <i class="bi bi-balloon-fill text-primary"></i> Bounce<span class="text-main">Elite</span>
+            </a>
+
+            <nav class="d-none d-lg-flex align-items-center">
+                <ul class="d-flex align-items-center m-0 p-0" style="list-style:none; gap:20px;">
+                    <li><a href="index.html" class="nav-link active">Home 1</a></li>
+                    <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="rtl-toggle btn btn-sm btn-outline-secondary" aria-label="Toggle RTL">RTL</button>
+                <a href="login.html" class="nav-link fw-bold">Login</a>
+                <a href="dashboard.html" class="btn-premium btn-sm">Dashboard</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="btn btn-outline-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <i class="bi bi-list fs-3"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end bg-main" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title text-primary"><i class="bi bi-balloon-fill"></i> BounceElite</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-3 mb-4">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home 1</a></li>
+                <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="d-flex flex-column gap-3">
+                <a href="login.html" class="btn btn-outline-premium w-100">Login</a>
+                <a href="dashboard.html" class="btn-premium w-100 text-center">Dashboard</a>
+            </div>
+            <div class="header-actions mt-4">
+                <button class="theme-toggle btn btn-outline-secondary w-100"><i class="bi bi-moon-fill"></i> Toggle
+                    Theme</button>
+                <button class="rtl-toggle btn btn-outline-secondary w-100">Toggle RTL</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 1. Hero Banner -->
+    <section class="hero-wrapper"
+        style="background-image: url('https://picsum.photos/seed/abouthero/1920/1080'); min-height: 60vh;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center pt-5 mt-5">
+            <h1 class="display-3 fw-bold text-white fade-up">Our <span class="text-primary">Story</span></h1>
+            <p class="lead text-white-50 fade-up stagger-1">Bringing joy and premium entertainment to families since
+                2018.</p>
+        </div>
+    </section>
+
+    <!-- 2. Company Story -->
+    <section class="bg-main py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 fade-right">
+                    <img src="https://images.pexels.com/photos/7578876/pexels-photo-7578876.jpeg"
+                        class="img-fluid rounded-4 shadow-lg" alt="Company History">
+                </div>
+                <div class="col-lg-6 fade-left">
+                    <h2 class="fw-bold mb-4">How We Started The <span class="text-primary">Fun</span></h2>
+                    <p>What began as a small family-owned business with just two bounce houses has grown into the
+                        premier inflatable rental company in the region. We realized early on that event planning is
+                        stressful, and we wanted to provide a hassle-free, premium experience.</p>
+                    <p>Today, our massive fleet includes state-of-the-art water slides, intricate obstacle courses, and
+                        specialized event games. We take pride in our 100% on-time delivery rate and our rigorous safety
+                        protocols.</p>
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <h3 class="text-primary fw-bold">8+</h3>
+                            <p class="small text-muted">Years Exp.</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="text-primary fw-bold">12k+</h3>
+                            <p class="small text-muted">Events</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="text-primary fw-bold">100+</h3>
+                            <p class="small text-muted">Inflatables</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Why Choose Us -->
+    <section class="bg-secondary py-5">
+        <div class="container text-center">
+            <div class="section-title fade-up">
+                <h2>Why Choose <span>BounceElite</span></h2>
+                <p>The premium choice for your peace of mind.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 zoom-in stagger-1">
+                    <div class="glass-card h-100">
+                        <i class="bi bi-clock-history text-primary display-4 mb-3"></i>
+                        <h5>On-Time Guarantee</h5>
+                        <p class="small text-muted">We arrive early for setup, every single time. No waiting around.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 zoom-in stagger-2">
+                    <div class="glass-card h-100">
+                        <i class="bi bi-shield-check text-primary display-4 mb-3"></i>
+                        <h5>Top Tier Safety</h5>
+                        <p class="small text-muted">Commercial-grade lead-free vinyl and rigorous anchoring systems.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 zoom-in stagger-3">
+                    <div class="glass-card h-100">
+                        <i class="bi bi-stars text-primary display-4 mb-3"></i>
+                        <h5>Impeccably Clean</h5>
+                        <p class="small text-muted">Sanitized with child-safe products after every use.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 zoom-in stagger-4">
+                    <div class="glass-card h-100">
+                        <i class="bi bi-calendar-check text-primary display-4 mb-3"></i>
+                        <h5>Easy Booking</h5>
+                        <p class="small text-muted">Real-time online reservations and automated updates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Team & Operations -->
+    <section class="bg-main py-5">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Meet The <span>Team</span></h2>
+                <p>The professionals behind your flawless events.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4 fade-up stagger-1">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle mb-3 shadow"
+                        style="width: 150px; height: 150px; object-fit: cover;" alt="Team Member">
+                    <h5>David Martinez</h5>
+                    <p class="text-primary small fw-bold">Operations Manager</p>
+                </div>
+                <div class="col-md-4 fade-up stagger-2">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-3 shadow"
+                        style="width: 150px; height: 150px; object-fit: cover;" alt="Team Member">
+                    <h5>Sarah Jenkins</h5>
+                    <p class="text-primary small fw-bold">Event Coordinator</p>
+                </div>
+                <div class="col-md-4 fade-up stagger-3">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-3 shadow"
+                        style="width: 150px; height: 150px; object-fit: cover;" alt="Team Member">
+                    <h5>Mike Thompson</h5>
+                    <p class="text-primary small fw-bold">Lead Installer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Mission & Vision -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 fade-right">
+                    <h2 class="fw-bold mb-4">Our <span class="text-primary">Mission & Vision</span></h2>
+                    <p class="lead text-muted mb-4">We are dedicated to elevating the standard of event rentals through
+                        unparalleled service, top-tier safety, and exceptional product quality.</p>
+
+                    <div class="d-flex mb-4">
+                        <div class="bg-primary text-white rounded p-3 me-4 d-flex align-items-center justify-content-center"
+                            style="width: 60px; height: 60px;">
+                            <i class="bi bi-bullseye fs-3"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold">Our Mission</h4>
+                            <p class="text-muted mb-0">To deliver joy and create unforgettable memories for families and
+                                communities by providing the cleanest, safest, and most exciting inflatables available.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="bg-primary text-white rounded p-3 me-4 d-flex align-items-center justify-content-center"
+                            style="width: 60px; height: 60px;">
+                            <i class="bi bi-eye fs-3"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold">Our Vision</h4>
+                            <p class="text-muted mb-0">To be the region's most trusted and sought-after premium event
+                                rental company, known for our flawless execution and commitment to customer
+                                satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-left">
+                    <img src="https://images.pexels.com/photos/9566211/pexels-photo-9566211.jpeg"
+                        class="img-fluid rounded-4 shadow-lg w-100" style="height: 500px; object-fit: cover;"
+                        alt="Our Mission">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Custom Request CTA -->
+    <section class="py-5 text-center bg-secondary">
+        <div class="container py-4 fade-up">
+            <h2 class="fw-bold mb-3">Have a Custom Request?</h2>
+            <p class="lead mb-4">Contact our team to build a tailored package for your massive event.</p>
+            <a href="contact.html" class="btn-outline-premium px-5">Contact Sales</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="navbar-brand fs-3 fw-bold mb-3 d-block text-decoration-none">
+                        <i class="bi bi-balloon-fill text-primary"></i> Bounce<span class="text-main">Elite</span>
+                    </a>
+                    <p class="mb-4">Delivering joy, safety, and unforgettable memories with our premium selection of
+                        bounce houses and event inflatables.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Inventory</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 footer-widget">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="dashboard.html">My Dashboard</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="blog.html">Party Tips</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-widget">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive discounts and new inventory updates.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-start-pill border-end-0"
+                            placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary rounded-end-pill px-4">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+                <p class="mb-0">&copy; 2026 BounceElite Rentals. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
