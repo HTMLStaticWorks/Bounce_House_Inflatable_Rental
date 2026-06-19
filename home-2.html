@@ -113,7 +113,7 @@
     <header class="header">
         <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
             <a href="index.html" class="navbar-brand">
-                <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span><span class="text-main">Elite</span>
+                <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span> <span class="text-main">Elite</span>
             </a>
 
             <nav class="d-none d-lg-flex align-items-center">
@@ -207,8 +207,8 @@
             <div class="col-lg-6 right-side position-relative">
                 <div class="position-absolute bottom-0 start-0 p-5 w-100 bg-gradient text-white"
                     style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
-                    <h3 class="fw-bold">The Giant Shark Slide</h3>
-                    <p class="mb-0"><i class="bi bi-star-fill text-warning"></i> Our highest rated summer rental.</p>
+                    <h3 class="fw-bold text-white">The Giant Shark Slide</h3>
+                    <p class="mb-0 text-white"><i class="bi bi-star-fill text-warning"></i> Our highest rated summer rental.</p>
                 </div>
             </div>
         </div>
@@ -223,32 +223,36 @@
             </div>
             <div class="row g-5">
                 <div class="col-md-6 zoom-in stagger-1">
-                    <div class="glass-card card-3d p-0 overflow-hidden">
+                    <div class="glass-card card-3d p-0 overflow-hidden h-100 d-flex flex-column">
                         <img src="https://images.pexels.com/photos/6489543/pexels-photo-6489543.jpeg" class="w-100"
                             style="height:300px; object-fit:cover;" alt="Featured 1">
-                        <div class="p-4 bg-card">
+                        <div class="p-4 bg-card d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <h4>Jurassic Adventure Park</h4>
                                 <span class="fs-5 text-primary fw-bold">$550</span>
                             </div>
-                            <p>A massive interactive dinosaur-themed obstacle course with integrated slide and climbing
+                            <p class="flex-grow-1">A massive interactive dinosaur-themed obstacle course with integrated slide and climbing
                                 wall.</p>
-                            <a href="service-details.html" class="btn btn-outline-premium">Book This Unit</a>
+                            <div class="mt-auto">
+                                <a href="service-details.html" class="btn btn-outline-premium">Book This Unit</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 zoom-in stagger-2">
-                    <div class="glass-card card-3d p-0 overflow-hidden">
+                    <div class="glass-card card-3d p-0 overflow-hidden h-100 d-flex flex-column">
                         <img src="https://images.pexels.com/photos/30157150/pexels-photo-30157150.jpeg" class="w-100"
                             style="height:300px; object-fit:cover;" alt="Featured 2">
-                        <div class="p-4 bg-card">
+                        <div class="p-4 bg-card d-flex flex-column flex-grow-1">
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <h4>Gladiator Joust Arena</h4>
                                 <span class="fs-5 text-primary fw-bold">$300</span>
                             </div>
-                            <p>Perfect for corporate events and older kids. Compete with padded jousts in a safe
+                            <p class="flex-grow-1">Perfect for corporate events and older kids. Compete with padded jousts in a safe
                                 inflatable arena.</p>
-                            <a href="service-details.html" class="btn btn-outline-premium">Book This Unit</a>
+                            <div class="mt-auto">
+                                <a href="service-details.html" class="btn btn-outline-premium">Book This Unit</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -269,8 +273,8 @@
                         class="img-fluid rounded-4 shadow-lg w-75" alt="Events">
                 </div>
                 <div class="col-lg-6 fade-right">
-                    <div class="d-flex mb-4">
-                        <div class="bg-primary text-white rounded p-3 me-3 d-flex align-items-center justify-content-center"
+                    <div class="d-flex mb-4 gap-3">
+                        <div class="bg-primary text-white rounded p-3 d-flex flex-shrink-0 align-items-center justify-content-center"
                             style="width:60px; height:60px;">
                             <i class="bi bi-gift fs-3"></i>
                         </div>
@@ -280,8 +284,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex mb-4">
-                        <div class="bg-primary text-white rounded p-3 me-3 d-flex align-items-center justify-content-center"
+                    <div class="d-flex mb-4 gap-3">
+                        <div class="bg-primary text-white rounded p-3 d-flex flex-shrink-0 align-items-center justify-content-center"
                             style="width:60px; height:60px;">
                             <i class="bi bi-building fs-3"></i>
                         </div>
@@ -291,8 +295,8 @@
                                 picnics.</p>
                         </div>
                     </div>
-                    <div class="d-flex mb-4">
-                        <div class="bg-primary text-white rounded p-3 me-3 d-flex align-items-center justify-content-center"
+                    <div class="d-flex mb-4 gap-3">
+                        <div class="bg-primary text-white rounded p-3 d-flex flex-shrink-0 align-items-center justify-content-center"
                             style="width:60px; height:60px;">
                             <i class="bi bi-backpack fs-3"></i>
                         </div>
@@ -431,12 +435,15 @@
     <!-- Footer (Same as Home 1) -->
 
 
+    
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <a href="index.html" class="navbar-brand fs-3 fw-bold mb-3 d-block text-decoration-none">
-                        <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span><span class="text-main">Elite</span>
+                        <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span> <span class="text-main">Elite</span>
                     </a>
                     <p class="mb-4">Delivering joy, safety, and unforgettable memories with our premium selection of
                         bounce houses and event inflatables.</p>
@@ -447,7 +454,6 @@
                         <a href="#"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
-                <!-- ... footer links ... -->
                 <div class="col-lg-2 col-md-6 footer-widget">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
@@ -474,8 +480,7 @@
                     <form class="d-flex">
                         <input type="email" class="form-control rounded-start-pill border-end-0"
                             placeholder="Your Email Address" required>
-                        <button type="submit" class="btn-premium rounded-end-pill px-4"
-                            style="padding: 10px 20px;">Join</button>
+                        <button type="submit" class="btn btn-primary rounded-end-pill px-4">Join</button>
                     </form>
                 </div>
             </div>
@@ -484,6 +489,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- Back to Top -->
     <button id="backToTop" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
@@ -495,4 +501,6 @@
 </body>
 
 </html>
+
+
 

@@ -18,7 +18,7 @@
             background-size: cover;
             background-position: center;
             position: relative;
-            padding: 2rem 0;
+            padding: 80px 15px 30px 15px;
         }
         .auth-overlay {
             position: absolute;
@@ -39,13 +39,18 @@
         }
         .social-btn:hover {
             background: var(--bg-secondary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <div class="position-absolute top-0 end-0 p-4 z-3">
-        <button class="theme-toggle btn btn-sm btn-outline-light me-2"><i class="bi bi-moon-fill"></i></button>
-        <button class="rtl-toggle btn btn-sm btn-outline-light">RTL</button>
+    <div class="position-absolute top-0 end-0 p-3 p-md-4 z-3">
+        <div class="glass-card py-2 px-3 d-flex gap-3 align-items-center rounded-pill border-0 shadow-sm">
+            <button class="theme-toggle btn btn-sm p-0 m-0 d-flex align-items-center justify-content-center"><i class="bi bi-moon-fill"></i></button>
+            <button class="rtl-toggle btn btn-sm p-0 m-0 fw-bold d-flex align-items-center justify-content-center">RTL</button>
+        </div>
     </div>
 
     <div class="auth-wrapper">
@@ -54,7 +59,7 @@
             <div class="glass-card p-4 p-md-5">
                 <div class="text-center mb-4">
                     <a href="index.html" class="fs-3 fw-bold text-decoration-none">
-                        <i class="bi bi-balloon-fill text-primary"></i> <span class="text-main">Bounce</span><span class="text-primary">Elite</span>
+                        <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span> <span class="text-main">Elite</span>
                     </a>
                     <p class="text-muted mt-2">Create an account to manage your bookings.</p>
                 </div>
@@ -114,3 +119,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+

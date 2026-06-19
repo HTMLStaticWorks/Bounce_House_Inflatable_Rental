@@ -57,11 +57,12 @@ html {
   font-size: 14px; /* Reduced base font size */
 }
 
-body {
+html, body {
   background-color: var(--bg-main);
   color: var(--text-main);
   transition: var(--transition);
   overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -224,7 +225,6 @@ p {
 .header .nav-link {
   color: var(--text-main);
   font-weight: 500;
-  margin: 0 10px;
   position: relative;
 }
 
@@ -496,3 +496,22 @@ footer {
 .stagger-2 { transition-delay: 0.2s; }
 .stagger-3 { transition-delay: 0.3s; }
 .stagger-4 { transition-delay: 0.4s; }
+
+/* Accordion Dark Theme Fix */
+.accordion-button {
+  color: var(--text-main);
+}
+.accordion-button:not(.collapsed) {
+  color: var(--primary);
+  background-color: rgba(255, 107, 53, 0.05);
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+[data-theme="dark"] .accordion-button::after {
+  filter: invert(1);
+}
+[data-theme="dark"] .accordion-button:not(.collapsed)::after {
+  filter: none;
+}
