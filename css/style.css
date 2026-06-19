@@ -497,14 +497,15 @@ footer {
 .stagger-3 { transition-delay: 0.3s; }
 .stagger-4 { transition-delay: 0.4s; }
 
-/* Accordion Dark Theme Fix */
-.accordion-button {
-  color: var(--text-main);
-}
-.accordion-button:not(.collapsed) {
-  color: var(--primary);
-  background-color: rgba(255, 107, 53, 0.05);
-  box-shadow: none;
+/* Accordion Theme Fix */
+.accordion {
+  --bs-accordion-color: var(--text-main);
+  --bs-accordion-bg: transparent;
+  --bs-accordion-btn-color: var(--text-main);
+  --bs-accordion-btn-bg: transparent;
+  --bs-accordion-active-color: var(--primary);
+  --bs-accordion-active-bg: rgba(255, 107, 53, 0.05);
+  --bs-accordion-border-color: var(--border-color);
 }
 .accordion-button:focus {
   box-shadow: none;
