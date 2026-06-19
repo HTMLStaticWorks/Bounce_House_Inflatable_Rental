@@ -53,50 +53,53 @@
             <div class="glass-card p-4 p-md-5">
                 <div class="text-center mb-4">
                     <a href="index.html" class="fs-3 fw-bold text-decoration-none">
-                        <i class="bi bi-balloon-fill text-primary"></i> <span class="text-white">Bounce</span><span class="text-primary">Elite</span>
+                        <i class="bi bi-balloon-fill text-primary"></i> <span class="text-main">Bounce</span><span class="text-primary">Elite</span>
                     </a>
-                    <p class="text-white-50 mt-2">Welcome back! Please login to your account.</p>
+                    <p class="text-muted mt-2">Welcome back! Please login to your account.</p>
                 </div>
 
                 <form>
                     <div class="mb-3">
-                        <label class="form-label text-white small fw-bold">Email Address</label>
-                        <input type="email" class="form-control bg-white bg-opacity-10 border-light text-white py-2" placeholder="name@example.com" required>
+                        <label class="form-label text-main small fw-bold">Email Address</label>
+                        <input type="email" class="form-control bg-transparent border-secondary text-main py-2" placeholder="name@example.com" required>
                     </div>
                     <div class="mb-3">
                         <div class="d-flex justify-content-between">
-                            <label class="form-label text-white small fw-bold">Password</label>
+                            <label class="form-label text-main small fw-bold">Password</label>
                             <a href="#" class="text-primary small text-decoration-none">Forgot Password?</a>
                         </div>
                         <div class="input-group">
-                            <input type="password" class="form-control bg-white bg-opacity-10 border-light text-white py-2" id="pwdInput" placeholder="Enter password" required>
-                            <button class="btn btn-outline-light" type="button" onclick="const pwd = document.getElementById('pwdInput'); pwd.type = pwd.type === 'password' ? 'text' : 'password'; this.querySelector('i').classList.toggle('bi-eye-slash'); this.querySelector('i').classList.toggle('bi-eye');">
+                            <input type="password" class="form-control bg-transparent border-secondary text-main py-2" id="pwdInput" placeholder="Enter password" required>
+                            <button class="btn btn-outline-secondary" type="button" onclick="const pwd = document.getElementById('pwdInput'); pwd.type = pwd.type === 'password' ? 'text' : 'password'; this.querySelector('i').classList.toggle('bi-eye-slash'); this.querySelector('i').classList.toggle('bi-eye');">
                                 <i class="bi bi-eye"></i>
                             </button>
                         </div>
                     </div>
                     <div class="mb-4 form-check">
                         <input type="checkbox" class="form-check-input" id="rememberMe">
-                        <label class="form-check-label text-white-50 small" for="rememberMe">Remember me</label>
+                        <label class="form-check-label text-muted small" for="rememberMe">Remember me</label>
                     </div>
                     <button type="submit" class="btn-premium w-100 mb-4">Sign In</button>
                 </form>
 
                 <div class="position-relative mb-4">
-                    <hr class="text-white-50">
-                    <span class="position-absolute top-50 start-50 translate-middle px-2 text-white-50 small" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">Or continue with</span>
+                    <hr class="text-muted">
+                    <span class="position-absolute top-50 start-50 translate-middle px-2 text-muted small" style="background: var(--bg-card);">Or continue with</span>
                 </div>
 
-                <div class="d-grid gap-2">
-                    <button class="btn social-btn py-2 d-flex justify-content-center align-items-center gap-2">
-                        <i class="bi bi-google text-danger"></i> Google
+                <div class="d-flex justify-content-center gap-3">
+                    <button class="btn social-btn py-2 px-4 d-flex justify-content-center align-items-center">
+                        <i class="bi bi-google text-danger fs-5"></i>
                     </button>
-                    <button class="btn social-btn py-2 d-flex justify-content-center align-items-center gap-2">
-                        <i class="bi bi-apple"></i> Apple
+                    <button class="btn social-btn py-2 px-4 d-flex justify-content-center align-items-center">
+                        <i class="bi bi-facebook text-primary fs-5"></i>
+                    </button>
+                    <button class="btn social-btn py-2 px-4 d-flex justify-content-center align-items-center">
+                        <i class="bi bi-apple fs-5"></i>
                     </button>
                 </div>
 
-                <p class="text-center text-white-50 mt-4 mb-0 small">Don't have an account? <a href="signup.html" class="text-primary fw-bold text-decoration-none">Sign Up</a></p>
+                <p class="text-center text-muted mt-4 mb-0 small">Don't have an account? <a href="signup.html" class="text-primary fw-bold text-decoration-none">Sign Up</a></p>
             </div>
         </div>
     </div>

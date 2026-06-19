@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | BounceElite</title>
-    
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <style>
@@ -17,21 +18,23 @@
             cursor: pointer;
             border-radius: 12px;
         }
+
         .gallery-img:hover {
             transform: scale(1.05);
             filter: brightness(1.1);
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <!-- Header -->
     <header class="header">
         <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
             <a href="index.html" class="navbar-brand">
-                <i class="bi bi-balloon-fill text-primary"></i> Bounce<span class="text-main">Elite</span>
+                <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span><span class="text-main">Elite</span>
             </a>
-            
+
             <nav class="d-none d-lg-flex align-items-center">
                 <ul class="d-flex align-items-center m-0 p-0" style="list-style:none; gap:20px;">
                     <li><a href="index.html" class="nav-link active">Home 1</a></li>
@@ -41,20 +44,21 @@
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                 </ul>
             </nav>
-            
+
             <div class="header-actions">
                 <button class="theme-toggle" aria-label="Toggle Theme">
                     <i class="bi bi-moon-fill"></i>
                 </button>
                 <button class="rtl-toggle btn btn-sm btn-outline-secondary" aria-label="Toggle RTL">RTL</button>
-                <a href="login.html" class="nav-link fw-bold">Login</a>
-                <a href="dashboard.html" class="btn-premium btn-sm">Dashboard</a>
+                <a href="signup.html" class="btn-premium btn-sm">Sign Up</a>
             </div>
 
             <!-- Mobile Menu Toggle -->
-            <button class="btn btn-outline-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <button class="btn btn-outline-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
                 <i class="bi bi-list fs-3"></i>
             </button>
         </div>
@@ -75,13 +79,14 @@
                 <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
                 <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
             </ul>
             <div class="d-flex flex-column gap-3">
-                <a href="login.html" class="btn btn-outline-premium w-100">Login</a>
-                <a href="dashboard.html" class="btn-premium w-100 text-center">Dashboard</a>
+                <a href="signup.html" class="btn-premium w-100 text-center">Sign Up</a>
             </div>
             <div class="header-actions mt-4">
-                <button class="theme-toggle btn btn-outline-secondary w-100"><i class="bi bi-moon-fill"></i> Toggle Theme</button>
+                <button class="theme-toggle btn btn-outline-secondary w-100"><i class="bi bi-moon-fill"></i> Toggle
+                    Theme</button>
                 <button class="rtl-toggle btn btn-outline-secondary w-100">Toggle RTL</button>
             </div>
         </div>
@@ -90,7 +95,8 @@
 
 
     <!-- 1. Hero Banner -->
-    <section class="hero-wrapper" style="background-image: url('https://picsum.photos/seed/galhero/1920/1080'); min-height: 40vh;">
+    <section class="hero-wrapper"
+        style="background-image: url('https://picsum.photos/seed/galhero/1920/1080'); min-height: 40vh;">
         <div class="hero-overlay"></div>
         <div class="container hero-content text-center pt-5 mt-5">
             <h1 class="display-3 fw-bold text-white fade-up">Event <span class="text-primary">Gallery</span></h1>
@@ -108,17 +114,20 @@
             <div class="row g-3">
                 <div class="col-md-4 fade-up stagger-1">
                     <div class="overflow-hidden rounded-4">
-                        <img src="https://picsum.photos/seed/galbd1/600/600" class="img-fluid gallery-img w-100" alt="Birthday 1">
+                        <img src="https://images.pexels.com/photos/7100342/pexels-photo-7100342.jpeg"
+                            class="img-fluid gallery-img w-100" alt="Birthday 1">
                     </div>
                 </div>
                 <div class="col-md-4 fade-up stagger-2">
                     <div class="overflow-hidden rounded-4">
-                        <img src="https://picsum.photos/seed/galbd2/600/600" class="img-fluid gallery-img w-100" alt="Birthday 2">
+                        <img src="https://images.pexels.com/photos/10651679/pexels-photo-10651679.jpeg"
+                            class="img-fluid gallery-img w-100" alt="Birthday 2">
                     </div>
                 </div>
                 <div class="col-md-4 fade-up stagger-3">
                     <div class="overflow-hidden rounded-4">
-                        <img src="https://picsum.photos/seed/galbd3/600/600" class="img-fluid gallery-img w-100" alt="Birthday 3">
+                        <img src="https://images.pexels.com/photos/17931469/pexels-photo-17931469.jpeg"
+                            class="img-fluid gallery-img w-100" alt="Birthday 3">
                     </div>
                 </div>
             </div>
@@ -133,19 +142,22 @@
                 <p>Handling large crowds with safe, high-throughput inflatables.</p>
             </div>
             <div class="row g-3">
-                <div class="col-md-4 fade-up stagger-1">
-                    <div class="overflow-hidden rounded-4">
-                        <img src="https://picsum.photos/seed/galsch1/600/600" class="img-fluid gallery-img w-100" alt="School 1">
+                <div class="col-md-6 fade-up stagger-1">
+                    <div class="overflow-hidden rounded-4 h-100">
+                        <img src="https://images.pexels.com/photos/31762310/pexels-photo-31762310.jpeg"
+                            class="img-fluid gallery-img w-100 h-100" style="object-fit:cover;" alt="School 1">
                     </div>
                 </div>
-                <div class="col-md-8 fade-up stagger-2">
+                <div class="col-md-6 fade-up stagger-2">
                     <div class="overflow-hidden rounded-4 h-100">
-                        <img src="https://picsum.photos/seed/galsch2/1200/600" class="img-fluid gallery-img w-100 h-100" style="object-fit:cover;" alt="School 2">
+                        <img src="https://images.pexels.com/photos/37857873/pexels-photo-37857873.jpeg"
+                            class="img-fluid gallery-img w-100 h-100" style="object-fit:cover;" alt="School 2">
                     </div>
                 </div>
                 <div class="col-md-12 fade-up stagger-3 mt-3">
                     <div class="overflow-hidden rounded-4">
-                        <img src="https://picsum.photos/seed/galsch3/1200/400" class="img-fluid gallery-img w-100" style="height:300px; object-fit:cover;" alt="School 3">
+                        <img src="https://images.pexels.com/photos/296308/pexels-photo-296308.jpeg"
+                            class="img-fluid gallery-img w-100" style="height:300px; object-fit:cover;" alt="School 3">
                     </div>
                 </div>
             </div>
@@ -162,19 +174,24 @@
             <div class="row g-3">
                 <div class="col-md-6 fade-up stagger-1">
                     <div class="overflow-hidden rounded-4 h-100">
-                        <img src="https://picsum.photos/seed/galcorp1/800/600" class="img-fluid gallery-img w-100 h-100" style="object-fit:cover;" alt="Corp 1">
+                        <img src="https://images.pexels.com/photos/35042249/pexels-photo-35042249.jpeg"
+                            class="img-fluid gallery-img w-100 h-100" style="object-fit:cover;" alt="Corp 1">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="row g-3">
                         <div class="col-12 fade-up stagger-2">
                             <div class="overflow-hidden rounded-4">
-                                <img src="https://picsum.photos/seed/galcorp2/800/400" class="img-fluid gallery-img w-100" style="height:250px; object-fit:cover;" alt="Corp 2">
+                                <img src="https://images.pexels.com/photos/6405661/pexels-photo-6405661.jpeg"
+                                    class="img-fluid gallery-img w-100" style="height:250px; object-fit:cover;"
+                                    alt="Corp 2">
                             </div>
                         </div>
                         <div class="col-12 fade-up stagger-3">
                             <div class="overflow-hidden rounded-4">
-                                <img src="https://picsum.photos/seed/galcorp3/800/400" class="img-fluid gallery-img w-100" style="height:250px; object-fit:cover;" alt="Corp 3">
+                                <img src="https://images.pexels.com/photos/14636170/pexels-photo-14636170.jpeg"
+                                    class="img-fluid gallery-img w-100" style="height:250px; object-fit:cover;"
+                                    alt="Corp 3">
                             </div>
                         </div>
                     </div>
@@ -193,9 +210,15 @@
             <div class="glass-card p-2 p-md-4 fade-up mx-auto" style="max-width: 900px;">
                 <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
                     <!-- Placeholder using an image that looks like a video -->
-                    <div class="position-relative w-100 h-100 bg-dark d-flex align-items-center justify-content-center" style="background-image: url('https://picsum.photos/seed/galvid/1200/700'); background-size: cover; background-position: center;">
-                        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.4);"></div>
-                        <button class="btn btn-primary rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; z-index: 2; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <div class="w-100 h-100 bg-dark d-flex align-items-center justify-content-center"
+                        style="background-image: url('https://images.pexels.com/photos/28121636/pexels-photo-28121636.jpeg'); background-size: cover; background-position: center;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.4);">
+                        </div>
+                        <button
+                            class="btn btn-primary rounded-circle p-0 d-flex align-items-center justify-content-center"
+                            style="width: 80px; height: 80px; z-index: 2; transition: transform 0.3s;"
+                            onmouseover="this.style.transform='scale(1.1)'"
+                            onmouseout="this.style.transform='scale(1)'">
                             <i class="bi bi-play-fill fs-1 text-white ms-2"></i>
                         </button>
                     </div>
@@ -220,9 +243,10 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <a href="index.html" class="navbar-brand fs-3 fw-bold mb-3 d-block text-decoration-none">
-                        <i class="bi bi-balloon-fill text-primary"></i> Bounce<span class="text-main">Elite</span>
+                        <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span><span class="text-main">Elite</span>
                     </a>
-                    <p class="mb-4">Delivering joy, safety, and unforgettable memories with our premium selection of bounce houses and event inflatables.</p>
+                    <p class="mb-4">Delivering joy, safety, and unforgettable memories with our premium selection of
+                        bounce houses and event inflatables.</p>
                     <div class="social-icons">
                         <a href="#"><i class="bi bi-facebook"></i></a>
                         <a href="#"><i class="bi bi-instagram"></i></a>
@@ -254,7 +278,8 @@
                     <h4>Newsletter</h4>
                     <p>Subscribe for exclusive discounts and new inventory updates.</p>
                     <form class="d-flex">
-                        <input type="email" class="form-control rounded-start-pill border-end-0" placeholder="Your Email Address" required>
+                        <input type="email" class="form-control rounded-start-pill border-end-0"
+                            placeholder="Your Email Address" required>
                         <button type="submit" class="btn btn-primary rounded-end-pill px-4">Join</button>
                     </form>
                 </div>
@@ -271,4 +296,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
+

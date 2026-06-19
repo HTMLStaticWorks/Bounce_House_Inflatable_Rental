@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
             <a href="index.html" class="navbar-brand">
-                <i class="bi bi-balloon-fill text-primary"></i> Bounce<span class="text-main">Elite</span>
+                <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span><span class="text-main">Elite</span>
             </a>
             
             <nav class="d-none d-lg-flex align-items-center">
@@ -26,6 +26,7 @@
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                 </ul>
             </nav>
             
@@ -34,8 +35,7 @@
                     <i class="bi bi-moon-fill"></i>
                 </button>
                 <button class="rtl-toggle btn btn-sm btn-outline-secondary" aria-label="Toggle RTL">RTL</button>
-                <a href="login.html" class="nav-link fw-bold">Login</a>
-                <a href="dashboard.html" class="btn-premium btn-sm">Dashboard</a>
+                <a href="signup.html" class="btn-premium btn-sm">Sign Up</a>
             </div>
 
             <!-- Mobile Menu Toggle -->
@@ -60,10 +60,10 @@
                 <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
                 <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
             </ul>
             <div class="d-flex flex-column gap-3">
-                <a href="login.html" class="btn btn-outline-premium w-100">Login</a>
-                <a href="dashboard.html" class="btn-premium w-100 text-center">Dashboard</a>
+                <a href="signup.html" class="btn-premium w-100 text-center">Sign Up</a>
             </div>
             <div class="header-actions mt-4">
                 <button class="theme-toggle btn btn-outline-secondary w-100"><i class="bi bi-moon-fill"></i> Toggle Theme</button>
@@ -143,6 +143,39 @@
         </div>
     </section>
 
+    <!-- How It Works -->
+    <section class="bg-secondary py-5">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>How It <span>Works</span></h2>
+                <p>Booking with us is simple and stress-free.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4 zoom-in stagger-1">
+                    <div class="glass-card h-100 p-4 border-primary" style="border-top: 4px solid var(--primary);">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px; font-size: 24px; font-weight: bold;">1</div>
+                        <h4 class="fw-bold mb-3">Choose Your Package</h4>
+                        <p class="text-muted">Browse our inventory and select the perfect package for your event size and budget.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 zoom-in stagger-2">
+                    <div class="glass-card h-100 p-4 border-primary" style="border-top: 4px solid var(--primary);">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px; font-size: 24px; font-weight: bold;">2</div>
+                        <h4 class="fw-bold mb-3">Reserve & Pay Deposit</h4>
+                        <p class="text-muted">Secure your date by paying a 25% deposit online. You'll receive instant confirmation.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 zoom-in stagger-3">
+                    <div class="glass-card h-100 p-4 border-primary" style="border-top: 4px solid var(--primary);">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 60px; height: 60px; font-size: 24px; font-weight: bold;">3</div>
+                        <h4 class="fw-bold mb-3">We Deliver & Setup</h4>
+                        <p class="text-muted">Our team arrives early to set up and sanitize the equipment. You just focus on having fun!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 3. Add-On Services -->
     <section class="bg-secondary py-5">
         <div class="container">
@@ -169,6 +202,47 @@
                             <p class="text-muted small mb-2">Commercial grade machine. Includes 50 cones and choice of pink vanilla or blue raspberry sugar floss.</p>
                             <h6 class="text-primary fw-bold">$60 / day</h6>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="bg-main py-5">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Service Areas & <span>Delivery</span></h2>
+                <p>Transparent delivery pricing based on your location.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 fade-up">
+                    <div class="glass-card p-4">
+                        <div class="d-flex align-items-center mb-4 border-bottom pb-3">
+                            <i class="bi bi-geo-alt-fill text-primary fs-2 me-3"></i>
+                            <div>
+                                <h4 class="fw-bold mb-0">Delivery Zones</h4>
+                                <p class="text-muted mb-0 small">Based on distance from our central warehouse.</p>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex justify-content-between align-items-center mb-3">
+                                <span><i class="bi bi-check2 text-success me-2"></i> <strong>Zone 1</strong> (0 - 15 Miles)</span>
+                                <span class="badge bg-success text-white">FREE Delivery</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center mb-3">
+                                <span><i class="bi bi-check2 text-success me-2"></i> <strong>Zone 2</strong> (16 - 25 Miles)</span>
+                                <span class="badge bg-secondary text-white">$45 Flat Fee</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center mb-3">
+                                <span><i class="bi bi-check2 text-success me-2"></i> <strong>Zone 3</strong> (26 - 40 Miles)</span>
+                                <span class="badge bg-secondary text-white">$85 Flat Fee</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span class="text-muted"><i class="bi bi-info-circle me-2"></i> Over 40 Miles</span>
+                                <span class="text-muted fst-italic small">Contact us for a custom quote</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -243,7 +317,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <a href="index.html" class="navbar-brand fs-3 fw-bold mb-3 d-block text-decoration-none">
-                        <i class="bi bi-balloon-fill text-primary"></i> Bounce<span class="text-main">Elite</span>
+                        <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span><span class="text-main">Elite</span>
                     </a>
                     <p class="mb-4">Delivering joy, safety, and unforgettable memories with our premium selection of bounce houses and event inflatables.</p>
                     <div class="social-icons">
@@ -295,3 +369,5 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+

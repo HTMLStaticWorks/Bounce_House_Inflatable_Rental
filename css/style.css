@@ -99,6 +99,10 @@ p {
 .bg-main { background-color: var(--bg-main) !important; }
 .bg-card { background-color: var(--bg-card) !important; }
 
+@media (min-width: 768px) {
+  .w-md-50 { width: 50% !important; }
+}
+
 /* Forms */
 .form-control, .form-select {
   color: var(--text-main) !important;

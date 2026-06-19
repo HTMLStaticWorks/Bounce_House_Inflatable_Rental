@@ -56,7 +56,7 @@
         }
         @media (max-width: 991px) {
             .dashboard-container { flex-direction: column; }
-            .sidebar { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid var(--border-color); }
+            .sidebar { width: 300px; height: 100vh; position: fixed; z-index: 1045; border-right: 1px solid var(--border-color); border-bottom: none; }
             .main-content { padding: 1rem; }
         }
     </style>
@@ -65,13 +65,23 @@
 
     <div class="dashboard-container">
         <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="p-4 border-bottom">
+            <!-- Mobile Header -->
+    <div class="d-flex d-lg-none align-items-center justify-content-between p-3 border-bottom bg-card" style="background: var(--bg-card);">
+        <a href="index.html" class="fs-4 fw-bold text-decoration-none">
+            <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span><span class="text-main">Elite</span>
+        </a>
+        <button class="btn btn-outline-primary border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashboardSidebar" aria-controls="dashboardSidebar">
+            <i class="bi bi-list fs-1"></i>
+        </button>
+    </div>
+
+        <aside class="sidebar offcanvas-lg offcanvas-start" tabindex="-1" id="dashboardSidebar" aria-labelledby="dashboardSidebarLabel">
+            <div class="p-4 border-bottom d-flex align-items-center justify-content-between">
                 <a href="index.html" class="fs-4 fw-bold text-decoration-none">
-                    <i class="bi bi-balloon-fill text-primary"></i> <span class="text-main">Bounce</span><span class="text-primary">Elite</span>
+                    <i class="bi bi-balloon-fill text-primary"></i> <span class="text-primary">Bounce</span><span class="text-main">Elite</span>
                 </a>
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#dashboardSidebar" aria-label="Close"></button>
             </div>
-            
             <div class="p-4">
                 <div class="d-flex align-items-center gap-3 mb-4">
                     <img src="https://picsum.photos/seed/userdash/50/50" class="rounded-circle shadow-sm" alt="User">
@@ -83,15 +93,15 @@
             </div>
 
             <nav class="d-flex flex-column mb-5">
-                <a href="#" class="sidebar-link active"><i class="bi bi-grid-1x2"></i> Dashboard Overview</a>
-                <a href="#" class="sidebar-link"><i class="bi bi-calendar-check"></i> My Bookings</a>
-                <a href="#" class="sidebar-link"><i class="bi bi-calendar3"></i> Availability Calendar</a>
-                <a href="#" class="sidebar-link"><i class="bi bi-star"></i> Upcoming Events</a>
-                <a href="#" class="sidebar-link"><i class="bi bi-heart"></i> Saved Rentals</a>
-                <a href="#" class="sidebar-link"><i class="bi bi-credit-card"></i> Payments</a>
-                <a href="#" class="sidebar-link"><i class="bi bi-bell"></i> Notifications <span class="badge bg-danger ms-auto rounded-pill">2</span></a>
-                <a href="#" class="sidebar-link"><i class="bi bi-gear"></i> Profile Settings</a>
-                <a href="#" class="sidebar-link"><i class="bi bi-life-preserver"></i> Support Tickets</a>
+                <a href="dashboard.html" class="sidebar-link active"><i class="bi bi-grid-1x2"></i> Dashboard Overview</a>
+                <a href="bookings.html" class="sidebar-link"><i class="bi bi-calendar-check"></i> My Bookings</a>
+                <a href="availability-calendar.html" class="sidebar-link"><i class="bi bi-calendar3"></i> Availability Calendar</a>
+                <a href="upcoming-events.html" class="sidebar-link"><i class="bi bi-star"></i> Upcoming Events</a>
+                <a href="saved-rentals.html" class="sidebar-link"><i class="bi bi-heart"></i> Saved Rentals</a>
+                <a href="payments.html" class="sidebar-link"><i class="bi bi-credit-card"></i> Payments</a>
+                <a href="notifications.html" class="sidebar-link"><i class="bi bi-bell"></i> Notifications <span class="badge bg-danger ms-auto rounded-pill">2</span></a>
+                <a href="profile-settings.html" class="sidebar-link"><i class="bi bi-gear"></i> Profile Settings</a>
+
                 <a href="login.html" class="sidebar-link mt-4 text-danger"><i class="bi bi-box-arrow-left"></i> Logout</a>
             </nav>
             
@@ -194,8 +204,9 @@
                         <div class="p-4 border-bottom bg-secondary d-flex justify-content-between align-items-center">
                             <h5 class="fw-bold mb-0">Recent Invoices</h5>
                             <a href="#" class="small text-primary text-decoration-none">View All</a>
-                        </div>
-                        <div class="p-4">
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#dashboardSidebar" aria-label="Close"></button>
+            </div>
+            <div class="p-4">
                             <!-- Invoice 1 -->
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <div class="d-flex align-items-center gap-3">
@@ -256,3 +267,5 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
