@@ -272,7 +272,7 @@ p {
 }
 
 /* Mobile Menu */
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .header-actions {
     display: none; /* Hide in normal flow on mobile, move to offcanvas */
   }
@@ -517,7 +517,7 @@ footer {
 }
 
 /* Pricing Featured Card - Mobile Fix */
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .glass-card[style*='scale(1.05)'] {
     transform: scale(1) !important;
   }
